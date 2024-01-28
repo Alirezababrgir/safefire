@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: radial-gradient(circle at 20% 100%,
+      rgba(184, 184, 184, 0.1) 0%,
+      rgba(184, 184, 184, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 99%),
+    linear-gradient(40deg, #ffffffa8, #b9c6e779, #ffffff, #fffffffb);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-variant: small-caps;
+  font-size: 3rem;
+  font-family: "Comfortaa", sans-serif !important;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-variant: small-caps;
+  font-size: 3rem;
+  font-family: "Comfortaa", sans-serif !important;
+}
+
+h3 {
+  font-variant: small-caps;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: inherit;
+  font-size: 17px;
+  text-transform: lowercase;
+}
+a{
+  text-decoration: none !important;
+}

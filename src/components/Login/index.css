@@ -1,0 +1,335 @@
+/*signup styles*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle at 20% 100%,
+      rgba(184, 184, 184, 0.1) 0%,
+      rgba(184, 184, 184, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 33%,
+      rgba(96, 96, 96, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 66%,
+      rgba(7, 7, 7, 0.1) 99%),
+    linear-gradient(40deg, #040a22, #0c1435, #030b29, #0e2686);
+}
+
+.logcontainer {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logcontainer span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 28px;
+  height: 6px;
+  background: #0E1632;
+  border-radius: 8px;
+  transform-origin: 138px;
+  transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+  animation: animateBlink 3s linear infinite;
+  animation-delay: calc(var(--i) * (3s / 50));
+}
+
+@keyframes animateBlink {
+  0% {
+    background: #434d6d;
+  }
+
+  25% {
+    background: #2c4766;
+  }
+
+  50% {
+    background: #1c2957;
+  }
+
+  75% {
+    background: #0E1632;
+  }
+}
+
+.login-box {
+  position: absolute;
+  width: 450px;
+}
+
+.login-box form {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #2c4766;
+  outline: none;
+  border-radius: 40px;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 20px;
+  transition: .5s ease;
+}
+
+
+.logh2 {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: rgb(255, 255, 255);
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: 1px;
+  font-size: .8em;
+  background: #101734;
+  padding: 0 6px;
+  color: rgb(255, 255, 255);
+}
+
+.forgot-pass {
+  margin: -15px 0 10px;
+  text-align: center;
+}
+
+.forgot-pass a {
+  font-size: .85em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.forgot-pass a:hover {
+  text-decoration: underline;
+}
+
+.regester {
+  width: 100%;
+  height: 40px;
+  background: #4c8bf5;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.cancel {
+  width: 40%;
+  height: 40px;
+  background: rgb(131, 9, 9);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.signup-link {
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.signup-link a {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+  --i:
+}
+
+/*radio button styles*/
+
+.radio-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: 0;
+  transform: translateY(-0%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  display: none;
+}
+
+.radio-button__input:checked+.radio-button__label .radio-button__custom {
+  display: block;
+  transform: translateY(-100%) scale(1);
+  border: 0px solid #4c8bf5;
+  color: #4c8bf5;
+}
+
+.radio-button__input:checked+.radio-button__label {
+  color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  display: block;
+  transform: translateY(-100%) scale(1);
+}
+
+.formparagraf {
+  font-size: 1rem !important;
+}
+
+@media (max-width: 500px) {
+  .logcontainer span {
+    margin-left: 20%;
+    width: 14px;
+    height: 3px;
+    background: #0E1632;
+    border-radius: 8px;
+    transform-origin: 78px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: animateBlink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+  }
+
+  .login-box {
+    position: absolute;
+    width: 200px;
+  }
+
+  .login-box form {
+    width: 100%;
+  }
+
+  .input-box input {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #596f88;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 20px;
+    transition: .5s ease;
+  }
+
+  .regester {
+    width: 100%;
+    height: 30px;
+    background: rgb(0, 44, 11);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .cancel {
+    width: 40%;
+    height: 20px;
+    background: rgb(78, 21, 21);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .login-box form {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .radio-buttons-container {
+    gap: 0px;
+  }
+  
+
+  .radio-button__custom {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 0;
+    transform: translateY(-100%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  .radio-button__input:checked+.radio-button__label .radio-button__custom {
+    transform: translateY(-100%) scale(1);
+    border: 0px solid #4c8bf5;
+    display:block;
+    color: #4c8bf5;
+  }
+}
