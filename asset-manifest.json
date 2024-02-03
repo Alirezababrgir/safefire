@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/safefire/static/css/main.6976f79d.css",
-    "main.js": "/safefire/static/js/main.2489e92e.js",
+    "main.css": "/safefire/static/css/main.7dd48814.css",
+    "main.js": "/safefire/static/js/main.8b5ea8b9.js",
     "reactPlayerYouTube.js": "/safefire/static/js/reactPlayerYouTube.8c342e47.chunk.js",
     "reactPlayerSoundCloud.js": "/safefire/static/js/reactPlayerSoundCloud.200ffeaa.chunk.js",
     "reactPlayerVimeo.js": "/safefire/static/js/reactPlayerVimeo.06e590e0.chunk.js",
@@ -25,10 +25,9 @@
     "static/media/meta.png": "/safefire/static/media/meta.351c3ee8675fbf0fd2ab.png",
     "static/media/FOREXBROKER.jpg": "/safefire/static/media/FOREXBROKER.260d27f0e8c5bf144732.jpg",
     "static/media/trust.png": "/safefire/static/media/trust.a030ca3d5a40546fdc36.png",
-    "static/media/notif.png": "/safefire/static/media/notif.ad1e87024cde16c78b00.png",
     "index.html": "/safefire/index.html",
-    "main.6976f79d.css.map": "/safefire/static/css/main.6976f79d.css.map",
-    "main.2489e92e.js.map": "/safefire/static/js/main.2489e92e.js.map",
+    "main.7dd48814.css.map": "/safefire/static/css/main.7dd48814.css.map",
+    "main.8b5ea8b9.js.map": "/safefire/static/js/main.8b5ea8b9.js.map",
     "reactPlayerYouTube.8c342e47.chunk.js.map": "/safefire/static/js/reactPlayerYouTube.8c342e47.chunk.js.map",
     "reactPlayerSoundCloud.200ffeaa.chunk.js.map": "/safefire/static/js/reactPlayerSoundCloud.200ffeaa.chunk.js.map",
     "reactPlayerVimeo.06e590e0.chunk.js.map": "/safefire/static/js/reactPlayerVimeo.06e590e0.chunk.js.map",
@@ -44,7 +43,7 @@
     "reactPlayerPreview.c2da23ae.chunk.js.map": "/safefire/static/js/reactPlayerPreview.c2da23ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6976f79d.css",
-    "static/js/main.2489e92e.js"
+    "static/css/main.7dd48814.css",
+    "static/js/main.8b5ea8b9.js"
   ]
 }
